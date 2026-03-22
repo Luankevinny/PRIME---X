@@ -1,0 +1,488 @@
+﻿<!doctype html>
+<html lang="pt-BR" data-wa-phone="5561920011386" data-wa-message="Olá! Quero contratar um plano de saúde + PAP com a PRIME-X.">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRIME-X — Planos de saúde e benefícios com PAP</title>
+  <meta name="description" content="PRIME-X Corretora de Seguros em Formosa/GO. Contrate planos de saúde e benefícios com PAP com telemedicina 24h, descontos em medicamentos e muito mais." />
+  <meta name="theme-color" content="#0b1020" />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.72);
+      --surface:rgba(255,255,255,.06);
+      --border:rgba(255,255,255,.14);
+      --gold:#f6c55a;
+      --gold2:#f0a94a;
+      --blue:#1e3a8a;
+      --brand2:#60a5fa;
+      --danger:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:16px;
+      --container:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 18% 8%, rgba(96,165,250,.22), transparent 60%),
+        radial-gradient(900px 520px at 90% 0%, rgba(246,197,90,.20), transparent 55%),
+        radial-gradient(900px 600px at 70% 88%, rgba(96,165,250,.12), transparent 60%),
+        var(--bg);
+      line-height:1.45;
+    }
+    a{color:inherit;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{width:min(100% - 40px, var(--container));margin:0 auto}
+    .skip{position:absolute;left:12px;top:12px;padding:10px 12px;background:#fff;color:#000;border-radius:10px;transform:translateY(-140%)}
+    .skip:focus{transform:translateY(0);outline:2px solid #000}
+
+    header{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(11,16,32,.58);border-bottom:1px solid rgba(255,255,255,.10)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px}
+
+    .brand{display:inline-flex;align-items:center;gap:10px}
+    .mark{width:34px;height:34px;border-radius:12px;display:grid;place-items:center;box-shadow:var(--shadow);
+      background:linear-gradient(135deg, rgba(246,197,90,.96), rgba(96,165,250,.92));}
+    .mark svg{width:22px;height:22px}
+    .brand strong{font-size:14px;letter-spacing:.2px;display:block;line-height:1.1}
+    .brand span{font-size:12px;color:var(--muted);display:block;line-height:1.1}
+
+    .links{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:flex-end}
+    .links a{font-size:13px;color:var(--muted);padding:8px 10px;border-radius:999px}
+    .links a:hover{color:var(--text);background:rgba(255,255,255,.06);text-decoration:none}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:11px 14px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:var(--text);
+      box-shadow:0 12px 40px rgba(0,0,0,.22);cursor:pointer;user-select:none;white-space:nowrap}
+    .btn:hover{background:rgba(255,255,255,.10);text-decoration:none}
+    .btn:focus-visible{outline:2px solid rgba(96,165,250,.7);outline-offset:3px}
+    .btn.primary{border:1px solid rgba(246,197,90,.40);background:linear-gradient(135deg, rgba(246,197,90,.98), rgba(96,165,250,.92));color:#07101f;font-weight:900}
+    .btn.ghost{background:transparent;border-color:rgba(255,255,255,.16)}
+
+    .hero{padding:56px 0 34px}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+    h1{font-size:clamp(28px, 4vw, 46px);line-height:1.04;margin:0 0 12px;letter-spacing:-.6px}
+    .lead{margin:0 0 18px;color:var(--muted);font-size:16px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 22px}
+    .badge{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);padding:8px 12px;border-radius:999px;font-size:12px;color:rgba(255,255,255,.82)}
+
+    .panel{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .panel .inner{padding:18px}
+    .panel h2{margin:0 0 8px;font-size:16px}
+    .panel p{margin:0 0 12px;color:var(--muted);font-size:13px}
+    .mini{margin:0;padding-left:16px;color:rgba(255,255,255,.86);font-size:13px}
+    .mini li{margin:6px 0}
+
+    .section{padding:30px 0}
+    .head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:14px}
+    .head h2{margin:0;font-size:22px;letter-spacing:-.2px}
+    .head p{margin:0;color:var(--muted);font-size:13px;max-width:62ch}
+
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:var(--radius);padding:16px}
+    .card h3{margin:0 0 6px;font-size:16px}
+    .card p{margin:0 0 12px;color:var(--muted);font-size:13px}
+
+    .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .pill{padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.78);font-size:12px;background:rgba(255,255,255,.04)}
+    .video-wrap{border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.22)}
+    .video{width:100%;display:block;aspect-ratio:16/9;background:rgba(0,0,0,.35)}
+
+    .banner-strip{display:flex;gap:12px;overflow:auto;padding:2px 2px 10px;scroll-snap-type:x mandatory}
+    .banner{flex:0 0 210px;border:1px solid rgba(255,255,255,.14);border-radius:14px;overflow:hidden;background:rgba(0,0,0,.18);box-shadow:0 12px 30px rgba(0,0,0,.22);scroll-snap-align:start}
+    .banner img{display:block;width:100%;aspect-ratio:9/16;object-fit:contain;background:rgba(0,0,0,.18)}
+
+    .price{display:flex;gap:10px;flex-wrap:wrap;align-items:baseline}
+    .price .tag{font-size:12px;color:rgba(255,255,255,.78)}
+    .price strong{font-size:28px;letter-spacing:-.6px}
+    .price small{color:rgba(255,255,255,.72)}
+
+    .note{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:12px;padding:12px 14px;color:rgba(255,255,255,.78);font-size:13px}
+
+    form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    label{display:block;font-size:12px;color:rgba(255,255,255,.82);margin-bottom:6px}
+    input,select,textarea{width:100%;padding:11px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.16);background:rgba(0,0,0,.20);color:var(--text);outline:none}
+    input::placeholder,textarea::placeholder{color:rgba(255,255,255,.45)}
+    input:focus,select:focus,textarea:focus{border-color:rgba(96,165,250,.65);box-shadow:0 0 0 4px rgba(96,165,250,.12)}
+    textarea{resize:vertical;min-height:110px}
+    .hint{color:var(--muted);font-size:12px;margin-top:6px}
+    .err{color:var(--danger);font-size:12px;margin-top:6px}
+
+    details{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:12px;padding:12px 14px}
+    summary{cursor:pointer;font-weight:650}
+
+    footer{padding:26px 0 40px;border-top:1px solid rgba(255,255,255,.10);margin-top:26px}
+    .footer-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+
+    .wa{position:fixed;right:16px;bottom:16px;z-index:60;display:inline-flex;align-items:center;gap:10px;padding:12px 14px;border-radius:999px;
+      background:linear-gradient(135deg, rgba(246,197,90,.98), rgba(96,165,250,.92));color:#07101f;font-weight:950;border:0;box-shadow:var(--shadow)}
+    .wa:hover{filter:brightness(1.04);text-decoration:none}
+    .wa svg{width:18px;height:18px}
+
+    @media (max-width:900px){.hero-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}}
+    @media (max-width:740px){.links{display:none}form .row{grid-template-columns:1fr}}
+  </style>
+
+  <meta property="og:title" content="PRIME-X — Planos de saúde e benefícios com PAP" />
+  <meta property="og:description" content="Contrate online. Telemedicina 24h, descontos em medicamentos e mais benefícios." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"InsuranceAgency",
+      "name":"PRIME-X Corretora de Seguros",
+      "url":"https://example.com/",
+      "telephone":"+55 61 92001-1386",
+      "address":{
+        "@type":"PostalAddress",
+        "addressLocality":"Formosa",
+        "addressRegion":"GO",
+        "addressCountry":"BR"
+      },
+      "areaServed":"BR"
+    }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header>
+    <div class="container">
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="brand" href="#topo" aria-label="Página inicial">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2c4 3.2 7.2 4 9 4.5V14c0 5.7-3.7 8.9-9 10-5.3-1.1-9-4.3-9-10V6.5C4.8 6 8 5.2 12 2Z" fill="#07101f" opacity=".95"/>
+              <path d="M8.5 12.4 10.6 14.5 15.8 9.2" stroke="#0b1020" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span>
+            <strong>PRIME-X</strong>
+            <span>Corretora de Seguros • Formosa/GO</span>
+          </span>
+        </a>
+
+        <div class="links" role="list">
+          <a role="listitem" href="#planos">Planos</a>
+          <a role="listitem" href="#beneficios">Benefícios</a>
+                    <a role="listitem" href="#midia">Mídia</a>
+<a role="listitem" href="#faq">Dúvidas</a>
+          <a role="listitem" href="#contato">Contato</a>
+        </div>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+          <a class="btn ghost" data-wa-link href="#" rel="noopener" target="_blank" aria-label="Falar no WhatsApp">WhatsApp</a>
+          <a class="btn primary" href="#planos">Contratar agora</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <div class="container hero-grid">
+        <div>
+          <h1>Cuide da sua saúde sem pesar no bolso.</h1>
+          <p class="lead">Acesso imediato a saúde e bem‑estar com praticidade, economia e segurança. Contratação online e suporte da PRIME-X no WhatsApp.</p>
+
+          <div class="badges" aria-label="Destaques">
+            <span class="badge">Telemedicina 24 horas</span>
+            <span class="badge">26 especialidades médicas</span>
+            <span class="badge">Até 70% em medicamentos (Rede Drogasil)</span>
+            <span class="badge">Consultas a partir de R$ 50</span>
+            <span class="badge">Exames com valores reduzidos</span>
+          </div>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn primary" href="#planos">Ver planos e contratar</a>
+            <a class="btn" data-wa-link href="#" rel="noopener" target="_blank">Tirar dúvidas no WhatsApp</a>
+          </div>
+
+          <p class="hint" style="margin-top:12px;">Valores exibidos conforme material promocional. Condições podem mudar — confirme no momento da contratação.</p>
+        </div>
+
+        <aside class="panel" aria-label="Resumo dos benefícios">
+          <div class="inner">
+            <h2>Benefícios do plano</h2>
+            <p>Uma opção prática para você e sua família acessarem saúde e assistência com economia.</p>
+            <ul class="mini">
+              <li>Exames laboratoriais e de imagem com valores reduzidos</li>
+              <li>Seguro de vida incluso (cobertura até R$ 12.273,66)</li>
+              <li>Assistência funeral nacional (cobertura até R$ 6.136,83)</li>
+              <li>Assistência odontológica (até 60% de desconto)</li>
+            </ul>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <a class="btn primary" href="#planos">Quero contratar</a>
+              <a class="btn ghost" href="#faq">Ver dúvidas</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="planos" class="section">
+      <div class="container">
+        <div class="head">
+          <div>
+            <h2>Escolha seu plano</h2>
+            <p>Você pode contratar online pelos links. Se preferir, a PRIME-X te orienta pelo WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="grid" role="list">
+          <article class="card" style="grid-column: span 6;" role="listitem">
+            <h3>Plano Individual + PAP</h3>
+            <p>Somente titular.</p>
+            <div class="price">
+              <span class="tag">Sem PAP</span> <strong>R$ 49,90</strong>
+              <span class="tag">Com PAP</span> <strong style="font-size:22px;">R$ 59,90</strong>
+            </div>
+            <div class="meta"><span class="pill">Telemedicina 24h</span><span class="pill">Medicamentos</span></div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+              <a class="btn primary" href="https://afiliados.amplamaisbeneficios.com.br/planos/contrate/luan.kerinny.silva.do.nascimento/c34b275f-0163-47e4-acb4-253e8c8b8f92" target="_blank" rel="noopener">Contratar</a>
+              <a class="btn" data-wa-link href="#" target="_blank" rel="noopener">Falar com a PRIME-X</a>
+            </div>
+          </article>
+
+          <article class="card" style="grid-column: span 6;" role="listitem">
+            <h3>Plano Família + PAP</h3>
+            <p>Titular, cônjuge e filhos até 18 anos.</p>
+            <div class="price">
+              <span class="tag">Sem PAP</span> <strong>R$ 69,90</strong>
+              <span class="tag">Com PAP</span> <strong style="font-size:22px;">R$ 79,90</strong>
+            </div>
+            <div class="meta"><span class="pill">Para família</span><span class="pill">Assistências</span></div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+              <a class="btn primary" href="https://afiliados.amplamaisbeneficios.com.br/planos/contrate/luan.kerinny.silva.do.nascimento/64e79e91-d4d7-40da-9257-065ca1af79c2" target="_blank" rel="noopener">Contratar</a>
+              <a class="btn" data-wa-link href="#" target="_blank" rel="noopener">Falar com a PRIME-X</a>
+            </div>
+          </article>
+
+          <article class="card" style="grid-column: span 6;" role="listitem">
+            <h3>Plano Familiar + PAP</h3>
+            <p>Titular, cônjuge e filhos até 18 anos + pai, mãe, sogro e sogra.</p>
+            <div class="price">
+              <span class="tag">Sem PAP</span> <strong>R$ 99,90</strong>
+              <span class="tag">Com PAP</span> <strong style="font-size:22px;">R$ 109,90</strong>
+            </div>
+            <div class="meta"><span class="pill">Família ampliada</span><span class="pill">Custo-benefício</span></div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+              <a class="btn primary" href="https://afiliados.amplamaisbeneficios.com.br/planos/contrate/luan.kerinny.silva.do.nascimento/64edf016-1b1f-4a0a-9fe1-f746960f7fa1" target="_blank" rel="noopener">Contratar</a>
+              <a class="btn" data-wa-link href="#" target="_blank" rel="noopener">Falar com a PRIME-X</a>
+            </div>
+          </article>
+
+          <article class="card" style="grid-column: span 6;" role="listitem">
+            <h3>Plano Sênior + PAP</h3>
+            <p>Titular e cônjuge acima de 75 anos.</p>
+            <div class="price">
+              <span class="tag">Sem PAP</span> <strong>R$ 39,90</strong>
+              <span class="tag">Com PAP</span> <strong style="font-size:22px;">R$ 49,90</strong>
+            </div>
+            <div class="meta"><span class="pill">Sênior</span><span class="pill">Telemedicina</span></div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+              <a class="btn primary" href="https://afiliados.amplamaisbeneficios.com.br/planos/contrate/luan.kerinny.silva.do.nascimento/df9aa020-d570-4749-83c8-8d98178ab24e" target="_blank" rel="noopener">Contratar</a>
+              <a class="btn" data-wa-link href="#" target="_blank" rel="noopener">Falar com a PRIME-X</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="note" style="margin-top:16px;">
+          <strong>Observação:</strong> PAP = Programa de Apoio Pessoal e Emocional (conforme material). Valores e regras podem variar.
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section">
+      <div class="container">
+        <div class="head">
+          <div>
+            <h2>O que você ganha</h2>
+            <p>Benefícios destacados no material promocional. Consulte detalhes e rede na contratação.</p>
+          </div>
+        </div>
+
+        <div class="grid" role="list">
+          <article class="card" style="grid-column: span 4;" role="listitem">
+            <h3>Telemedicina 24 horas</h3>
+            <p>Atendimento médico sem sair de casa, direto pelo aplicativo (conforme material).</p>
+            <div class="meta"><span class="pill">24h</span><span class="pill">Praticidade</span></div>
+          </article>
+          <article class="card" style="grid-column: span 4;" role="listitem">
+            <h3>26 especialidades médicas</h3>
+            <p>De cardiologista até neuropediatra (conforme material promocional).</p>
+            <div class="meta"><span class="pill">Especialidades</span><span class="pill">Telemedicina</span></div>
+          </article>
+          <article class="card" style="grid-column: span 4;" role="listitem">
+            <h3>Até 70% em medicamentos</h3>
+            <p>Descontos na Rede Drogasil (conforme regras e disponibilidade).</p>
+            <div class="meta"><span class="pill">Economia</span><span class="pill">Farmácia</span></div>
+          </article>
+          <article class="card" style="grid-column: span 4;" role="listitem">
+            <h3>Consultas presenciais</h3>
+            <p>Em Formosa e Brasília a partir de <strong>R$ 50</strong> (conforme material).</p>
+            <div class="meta"><span class="pill">Acesso</span><span class="pill">Saúde</span></div>
+          </article>
+
+          <article class="card" style="grid-column: span 4;" role="listitem">
+            <h3>Exames com valores reduzidos</h3>
+            <p>Laboratoriais e de imagem com valores reduzidos (ex.: Sabin/Exame, conforme material).</p>
+            <div class="meta"><span class="pill">Exames</span><span class="pill">Rede</span></div>
+          </article>
+          <article class="card" style="grid-column: span 4;" role="listitem">
+            <h3>Seguro de vida incluso</h3>
+            <p>Cobertura de até <strong>R$ 12.273,66</strong> (conforme material).</p>
+            <div class="meta"><span class="pill">Proteção</span><span class="pill">Tranquilidade</span></div>
+          </article>
+          <article class="card" style="grid-column: span 4;" role="listitem">
+            <h3>Assistências e odontologia</h3>
+            <p>Funeral nacional até <strong>R$ 6.136,83</strong> e odontologia com até <strong>60%</strong> de desconto (conforme material).</p>
+            <div class="meta"><span class="pill">Assistência</span><span class="pill">Odonto</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="midia" class="section">
+      <div class="container">
+        <div class="head">
+          <div>
+            <h2>Banners e vídeo</h2>
+            <p>Materiais para você entender os benefícios e compartilhar. O vídeo abre aqui mesmo; os banners abrem em tela cheia.</p>
+          </div>
+          <a class="btn" data-wa-link href="#" target="_blank" rel="noopener">Quero tirar dúvidas</a>
+        </div>
+
+        <div class="grid">
+          <div class="card" style="grid-column: span 7;">
+            <h3 style="margin-top:0;">Vídeo explicativo</h3>
+            <div class="video-wrap" aria-label="Vídeo PRIME-X">
+              <video class="video" controls playsinline preload="metadata" poster="assets/banners/banner-2.jpeg">
+                <source src="assets/media/prime-x.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeo.
+              </video>
+            </div>
+            <p class="hint" style="margin-bottom:0;">Dica: no celular, toque em tela cheia. Se não abrir, baixe o arquivo em <code>assets/media/prime-x.mp4</code>.</p>
+          </div>
+
+          <div class="card" style="grid-column: span 5;">
+            <h3 style="margin-top:0;">Banners (clique para abrir)</h3>
+            <p>Use estes banners para divulgar e mandar no WhatsApp/Instagram.</p>
+            <div class="banner-strip" aria-label="Banners PRIME-X">
+              <a class="banner" href="assets/banners/banner-1.jpeg" target="_blank" rel="noopener"><img src="assets/banners/banner-1.jpeg" alt="Banner PRIME-X 1" loading="lazy" decoding="async" /></a>
+              <a class="banner" href="assets/banners/banner-2.jpeg" target="_blank" rel="noopener"><img src="assets/banners/banner-2.jpeg" alt="Banner PRIME-X 2" loading="lazy" decoding="async" /></a>
+              <a class="banner" href="assets/banners/banner-3.jpeg" target="_blank" rel="noopener"><img src="assets/banners/banner-3.jpeg" alt="Banner PRIME-X 3" loading="lazy" decoding="async" /></a>
+              <a class="banner" href="assets/banners/banner-4.jpeg" target="_blank" rel="noopener"><img src="assets/banners/banner-4.jpeg" alt="Banner PRIME-X 4" loading="lazy" decoding="async" /></a>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+              <a class="btn primary" href="#planos">Ver planos</a>
+              <a class="btn" data-wa-link href="#" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="head">
+          <div>
+            <h2>Dúvidas frequentes</h2>
+            <p>Se tiver qualquer dúvida, chama no WhatsApp que a PRIME-X te ajuda agora.</p>
+          </div>
+          <a class="btn" data-wa-link href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+
+        <div class="grid">
+          <details style="grid-column: span 6;">
+            <summary>Como eu contrato?</summary>
+            <p style="color:var(--muted);font-size:13px;margin:10px 0 0;">Escolha um plano e clique em <strong>Contratar</strong>. Se preferir, fale com a PRIME-X no WhatsApp para orientação.</p>
+          </details>
+          <details style="grid-column: span 6;">
+            <summary>O que é PAP?</summary>
+            <p style="color:var(--muted);font-size:13px;margin:10px 0 0;">PAP é o Programa de Apoio Pessoal e Emocional (conforme material). Consulte as condições no momento da contratação.</p>
+          </details>
+          <details style="grid-column: span 6;">
+            <summary>Os valores são fixos?</summary>
+            <p style="color:var(--muted);font-size:13px;margin:10px 0 0;">Podem mudar conforme campanhas e regras do parceiro. Confirme sempre no link de contratação.</p>
+          </details>
+          <details style="grid-column: span 6;">
+            <summary>Posso tirar dúvidas antes de contratar?</summary>
+            <p style="color:var(--muted);font-size:13px;margin:10px 0 0;">Sim. Clique em WhatsApp e fale direto com a PRIME-X.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="card" style="display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+          <div>
+            <h3 style="margin:0 0 6px;">Contato</h3>
+            <p style="margin:0; color:rgba(255,255,255,.72);">Formosa/GO • WhatsApp: +55 (61) 92001‑1386 • E-mail: <a href="mailto:kevinnyluan@gmail.com">kevinnyluan@gmail.com</a></p>
+            <p class="hint" style="margin-bottom:0;">Atendimento: Seg–Sex, 9h às 18h (horário de Brasília).</p>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn primary" data-wa-link href="#" rel="noopener" target="_blank">Chamar no WhatsApp</a>
+            <a class="btn" href="mailto:kevinnyluan@gmail.com?subject=Plano%20de%20Sa%C3%BAde%20%2B%20PAP%20-%20PRIME%20-%20X">Enviar e-mail</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>PRIME-X Corretora de Seguros</strong><br />
+        <small style="color:rgba(255,255,255,.65)">© <span id="year"></span> • Formosa/GO • WhatsApp: +55 (61) 92001‑1386</small>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-content:flex-start;">
+        <a class="btn ghost" href="#planos">Planos</a>
+        <a class="btn ghost" href="#contato">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa" data-wa-link href="#" rel="noopener" target="_blank" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z" fill="#07101f" opacity=".92"/>
+      <path d="M16.9 14.2c-.2.6-1 1.1-1.6 1.2-.4.1-.9.2-2.9-.6-2.4-1-3.9-3.4-4-3.6-.1-.1-1-1.3-1-2.6 0-1.2.6-1.8.8-2 .2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.2.1.4 0 .6-.1.2-.2.4-.4.6-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 .1.1 1 1 2.4 1.3.2.1.4.1.5-.1.1-.1.6-.7.7-.9.2-.2.4-.2.6-.1.2.1 1.4.7 1.7.8.2.1.4.2.4.3.1.1.1.7-.1 1.2Z" fill="#0b1020"/>
+    </svg>
+    WhatsApp
+  </a>
+
+  <script>
+    (() => {
+      const $ = (s, r=document) => r.querySelector(s);
+      const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+
+      const phone = document.documentElement.getAttribute('data-wa-phone') || '5561920011386';
+      const msg = document.documentElement.getAttribute('data-wa-message') || 'Olá! Quero contratar um plano de saúde + PAP com a PRIME-X.';
+      const waUrl = `https://wa.me/${encodeURIComponent(phone)}?text=${encodeURIComponent(msg)}`;
+      $$('[data-wa-link]').forEach(a => a.setAttribute('href', waUrl));
+
+      $('#year').textContent = String(new Date().getFullYear());
+
+      $$('a[href^="#"]').forEach(a => a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href');
+        if (!href || href.length < 2) return;
+        const target = document.getElementById(href.slice(1));
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        history.pushState(null, '', href);
+      }));
+    })();
+  </script>
+</body>
+</html>
+
+
+
+
